@@ -14,7 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    \app\Post::create([
+        'title'=>'test title',
+        'content'=>'test content'
+    ]);
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
