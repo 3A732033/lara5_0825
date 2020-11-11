@@ -19,10 +19,13 @@ Route::get('/', function () {
  //      'content'=>'test content'
  //   ]);
 
-    $post=new\App\Post();
-    $post->title='test title';
-    $post->content='test content';
-    $post->save();
+//    $post=new\App\Post();
+//    $post->title='test title';
+//    $post->content='test content';
+//    $post->save();
+
+    $posts = \App\Post::all();
+    dd($posts);
 
 });
 
