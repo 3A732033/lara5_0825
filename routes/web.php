@@ -14,10 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    \app\Post::create([
+    \App\Post::create([
         'title'=>'test title',
         'content'=>'test content'
     ]);
+
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
