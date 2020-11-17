@@ -147,11 +147,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wagon\uwamp\www\lara5_0825\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wagon\uwamp\www\lara_0818_u2p4\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\patri\OneDrive\Desktop\WISD\wagon\uwamp\www\lara_0825\app" />
+      <recent name="C:\wagon\uwamp\www\lara5_0825\app" />
     </key>
   </component>
   <component name="RunManager">
@@ -174,6 +175,7 @@
       <workItem from="1605060251276" duration="1084000" />
       <workItem from="1605061980149" duration="1456000" />
       <workItem from="1605063911166" duration="783000" />
+      <workItem from="1605630042091" duration="864000" />
     </task>
     <servers />
   </component>
