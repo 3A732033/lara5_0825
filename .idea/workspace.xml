@@ -175,7 +175,7 @@
       <workItem from="1605060251276" duration="1084000" />
       <workItem from="1605061980149" duration="1456000" />
       <workItem from="1605063911166" duration="783000" />
-      <workItem from="1605630042091" duration="864000" />
+      <workItem from="1605630042091" duration="1194000" />
     </task>
     <servers />
   </component>
@@ -187,5 +187,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="442" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603856826051" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Post.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
