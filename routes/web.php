@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
- //   \App\Post::create([
- //       'title'=>'test title',
- //      'content'=>'test content'
- //   ]);
+/*    \App\Post::create([
+        'title'=>'test title',
+        'content'=>'test content'
+    ]);*/
 
 //    $post=new\App\Post();
 //    $post->title='test title';
@@ -51,10 +51,12 @@ Route::get('/', function () {
 
 //    \App\Post::destroy(3,5,7);
 
-    $post=\App\Post::find(1);
+   /* $post=\App\Post::find(1);
     foreach($post->comments as $comment){
         echo $comment->content.'<br>';
-    }
+    }*/
+    $allPosts = Post::all();
+    dd($allPosts);
 
 
 });
