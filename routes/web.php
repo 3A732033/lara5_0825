@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use App\Models\comments;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +15,10 @@ use App\Models\Post;
 */
 
 Route::get('/', function () {
-    \App\Models\Post::create([
-        'title'=>'test title',
-        'content'=>'test content'
-    ]);
+//    \App\Models\Post::create([
+//        'title'=>'test title',
+//        'content'=>'test content'
+//    ]);
 
 //    $post=new\App\Post();
 //    $post->title='test title';
@@ -62,8 +63,12 @@ Route::get('/', function () {
     dd($featuredPosts);*/
     /*$fourthPost = Post::find(4);
     dd($fourthPost);*/
-    $lastPost=Post::orderBy('id','DESC')->first();
-    dd($lastPost);
+ /*   $lastPost=Post::orderBy('id','DESC')->first();
+    dd($lastPost);*/
+    $comments =new comments();
+    $comments->content = '123';
+    $comments->post_id = '4';
+    $comments->save();
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
