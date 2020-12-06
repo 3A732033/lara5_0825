@@ -14,10 +14,10 @@ use App\Models\Post;
 */
 
 Route::get('/', function () {
-/*    \App\Post::create([
+    \App\Models\Post::create([
         'title'=>'test title',
         'content'=>'test content'
-    ]);*/
+    ]);
 
 //    $post=new\App\Post();
 //    $post->title='test title';
@@ -55,10 +55,11 @@ Route::get('/', function () {
     foreach($post->comments as $comment){
         echo $comment->content.'<br>';
     }*/
-    $allPosts = Post::all();
-    dd($allPosts);
+/*    $allPosts = Post::all();
+    dd($allPosts);*/
 
-
+    $featuredPosts=Post::where('is_feature',1)->get();
+    dd($featuredPosts);
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
