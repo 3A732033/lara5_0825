@@ -66,8 +66,8 @@ Route::get('/', function () {
  /*   $lastPost=Post::orderBy('id','DESC')->first();
     dd($lastPost);*/
     $comments =new comments();
-    $comments->content = '123';
-    $comments->post_id = '4';
+    $comments->content = '456';
+    $comments->post_id = '2';
     $comments->save();
 });
 
