@@ -65,10 +65,14 @@ Route::get('/', function () {
     dd($fourthPost);*/
  /*   $lastPost=Post::orderBy('id','DESC')->first();
     dd($lastPost);*/
-    $comments =new comments();
+/*    $comments =new comments();
     $comments->content = '456';
     $comments->post_id = '2';
-    $comments->save();
+    $comments->save();*/
+    $post=Post::find(2);
+    foreach($post->comments as $comments){
+        echo $comments->content.'<br>';
+    }
 });
 
 Route::get('posts', ['as' => 'posts.index',   'uses' => 'PostsController@index']);
